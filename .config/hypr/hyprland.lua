@@ -238,7 +238,7 @@ hl.config({
 	kb_options = "ctrl:nocaps",
 
         touchpad = {
-            natural_scroll = false,
+            natural_scroll = true,
         },
     },
 })
