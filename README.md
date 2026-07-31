@@ -1,4 +1,4 @@
-### Instructions to create this repo (for myself)
+### Instructions (for myself) to create this repo
 
 1. Add in .bashrc: `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
 2. Initialize new folder: `git init --bare $HOME/.dotfiles`
