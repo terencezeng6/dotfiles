@@ -2,7 +2,15 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["battery", "bluetooth", "network", "cpu", "memory", "clock"],
+    "modules-right": ["bluetooth", "network", "cpu", "memory", "battery", "clock"],
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "active": "󰣏",
+            "default": "󱀝"
+        }
+    },
     "hyprland/window": {
         "max-length": 50
     },

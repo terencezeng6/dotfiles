@@ -12,7 +12,7 @@ window#waybar {
 
 /*
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 8px;
     background-color: transparent;
     color: #ffffff;
 }
@@ -27,7 +27,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: @pink;
+    background: @red;
     color: @base;
 }
 
@@ -43,7 +43,7 @@ window#waybar {
 #memory,
 #clock {
     border-radius: 2px;
-    padding: 0 5px;
+    padding: 0 8px;
     background: @surface0;
     margin: 2px 0px 3px 2px;
 }
