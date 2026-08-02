@@ -2,11 +2,11 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Iosevka Nerd Font;
+    font-family: Iosevka Nerd Font Propo;
 }
 
 window#waybar {
-    background-color: alpha(@base, 0.5);
+    background-color: @base;
     color: #ffffff;
 }
 
@@ -21,7 +21,7 @@ window#waybar {
 #workspaces button {
     padding: 0px;
     background: transparent;
-    margin: 2px 0 2px 4px;
+    margin: 2px 2px 3px 0;
     border-radius: 2px;
     color: @text;
 }
@@ -36,10 +36,15 @@ window#waybar {
     color: @base;
 }
 
-#battery {
+#battery,
+#bluetooth,
+#network,
+#cpu,
+#memory,
+#clock {
     border-radius: 2px;
-    padding: 0px 5px;
+    padding: 0 5px;
     background: @surface0;
-    margin: 2px;
+    margin: 2px 0px 3px 2px;
 }
 
