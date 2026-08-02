@@ -31,3 +31,8 @@ window#waybar {
     color: @base;
 }
 
+#workspaces button.urgent {
+    background: rgb(255, 0, 0);
+    color: @base;
+}
+
