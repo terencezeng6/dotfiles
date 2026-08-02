@@ -41,7 +41,8 @@ window#waybar {
 #network,
 #cpu,
 #memory,
-#clock {
+#clock,
+#pulseaudio {
     border-radius: 2px;
     padding: 0 8px;
     background: @surface0;

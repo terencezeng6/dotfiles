@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["bluetooth", "network", "cpu", "memory", "battery", "clock"],
+    "modules-right": ["bluetooth", "network", "pulseaudio", "cpu", "memory", "battery", "clock"],
     "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
@@ -34,12 +34,14 @@
     "cpu": {
 	    "interval": 5,
 	    "format": "{}% ",
-	    "max-length": 10
+	    "max-length": 10,
+        "on-click": "kitty -- btop"
     },
     "memory": {
 	    "interval": 5,
 	    "format": "{percentage}% ",
-	    "tooltip-format": "{used:0.1f}GB/{total:0.1f}GB"
+	    "tooltip-format": "{used:0.1f}GB/{total:0.1f}GB",
+        "on-click": "kitty -- htop"
     },
     "network": {
 	    "format": "",
@@ -50,11 +52,20 @@
 	    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
 	    "tooltip-format-ethernet": "{ifname} ",
 	    "tooltip-format-disconnected": "Disconnected",
-	    "max-length": 50
+	    "max-length": 50,
+        "on-click": "kitty -- nmrs"
     },
     "clock": {
         "format": "{:%a, %b %d %H:%M}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "󰸈",
+        "format-icons": {
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
     },
 }
 
