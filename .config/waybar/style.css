@@ -10,3 +10,24 @@ window#waybar {
     color: #ffffff;
 }
 
+/*
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+*/
+
+#workspaces button {
+    padding: 0px;
+    background: transparent;
+    margin: 2px 0 2px 4px;
+    border-radius: 2px;
+    color: @text;
+}
+
+#workspaces button.active {
+    background: @pink;
+    color: @base;
+}
+
