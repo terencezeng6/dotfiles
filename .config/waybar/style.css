@@ -36,3 +36,10 @@ window#waybar {
     color: @base;
 }
 
+#battery {
+    border-radius: 2px;
+    padding: 0px 5px;
+    background: @surface0;
+    margin: 2px;
+}
+
