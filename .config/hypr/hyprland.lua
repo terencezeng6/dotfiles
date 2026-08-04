@@ -15,13 +15,6 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "eDP-1",
-    mode     = "preferred",
-    position = "auto",
-    scale    = 1.33,
-})
-
-hl.monitor({
     output = "DP-2",
     mode = "preferred",
     position = "auto",
@@ -29,8 +22,10 @@ hl.monitor({
 })
 
 hl.monitor({
-    output = "eDP-1",
-    disabled = true
+    output   = "eDP-1",
+    mode     = "preferred",
+    position = "auto",
+    scale    = 1.33,
 })
 
 ---------------------
