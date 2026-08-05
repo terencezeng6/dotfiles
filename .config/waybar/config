@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["bluetooth", "network", "pulseaudio", "cpu", "memory", "battery", "clock"],
+    "modules-right": ["bluetooth", "network", "group/volume", "cpu", "memory", "battery", "clock"],
     "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
@@ -67,5 +67,17 @@
         },
         "on-click": "pavucontrol"
     },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"        
+    },
+    "group/volume": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "pulseaudio/slider"
+        ]
+    }
 }
 

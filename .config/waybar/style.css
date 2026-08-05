@@ -42,10 +42,32 @@ window#waybar {
 #cpu,
 #memory,
 #clock,
-#pulseaudio {
+#volume {
     border-radius: 2px;
     padding: 0 8px;
     background: @surface0;
     margin: 2px 0px 3px 2px;
+}
+
+#pulseaudio-slider {
+    padding: 0px;
+    margin: 0px 0px 0px 8px;
+}
+
+#pulseaudio-slider slider {
+    all: unset;
+}
+
+#pulseaudio-slider trough {
+    min-height: 4px;
+    min-width: 75px;
+    border-radius: 2px;
+    background: @base;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 4px;
+    border-radius: 2px;
+    background: @text;
 }
 
