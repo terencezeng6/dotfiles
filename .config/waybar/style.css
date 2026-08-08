@@ -65,6 +65,11 @@ window#waybar {
     background: @base;
 }
 
+#volume:hover #pulseaudio-slider trough,
+#volume:active pulseaudio-slider trough {
+    min-height: 8px;
+}
+
 #pulseaudio-slider highlight {
     min-width: 4px;
     border-radius: 2px;
