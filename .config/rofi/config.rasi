@@ -1,4 +1,13 @@
+@import "catppuccin-mocha"
+
 configuration {
     font: "Iosevka Nerd Font 12";
+}
+
+* {
+  lightfg:                     @text;
+  lightbg:                     @mantle;
+  background:                  @base;
+  foreground:                  @text;
 }
 
