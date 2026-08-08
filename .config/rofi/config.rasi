@@ -6,5 +6,6 @@
     lightbg:        @base;
     background:     @base;
     foreground:     @text;
+    selected-normal-background: @red;
 }
 
