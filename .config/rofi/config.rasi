@@ -1,11 +1,24 @@
 @import "catppuccin-mocha"
 
 * {
-    font:           "Iosevka Nerd Font 12";
-    lightfg:        @text;
-    lightbg:        @base;
-    background:     @base;
-    foreground:     @text;
-    selected-normal-background: @red;
+    font:                       "Iosevka Nerd Font 12";
+    background:                 rgba(0, 0, 0, 0.7);
+    background-color:           transparent;
+    foreground:                 @text;
+    lightfg:                    @text;
+    lightbg:                    transparent;
+    selected-normal-background: @blue;
+}
+
+scrollbar {
+    handle-color:               @blue;
+}
+
+element normal.normal {
+    background-color:           transparent;
+}
+
+element selected.normal {
+    text-color:                 @background;
 }
 
