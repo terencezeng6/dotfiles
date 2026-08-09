@@ -1,19 +1,10 @@
 -- Refer to the wiki for more information.
 -- https://wiki.hypr.land/Configuring/Start/
 
--- Please note not all available settings / options are set here.
--- For a full list, see the wiki
-
--- You can (and should!!) split this configuration into multiple files
--- Create your files separately and then require them like this:
--- require("myColors")
-
-
-------------------
 ---- MONITORS ----
 ------------------
 
--- See https://wiki.hypr.land/Configuring/Basics/Monitors/
+-- Display scaling for laptop screen and monitor, respectively
 hl.monitor({
     output = "DP-2",
     mode = "preferred",
@@ -27,6 +18,14 @@ hl.monitor({
     position = "auto",
     scale    = 1.33,
 })
+
+-- Disable laptop display when lid is closed
+hl.bind("switch:on:Lid Switch", function()
+	hl.monitor({ output = "eDP-1", disabled = true })
+end, { locked = true })
+hl.bind("switch:off:Lid Switch", function()
+	hl.monitor({ output = "eDP-1", disabled = false })
+end, { locked = true })
 
 ---------------------
 ---- MY PROGRAMS ----
