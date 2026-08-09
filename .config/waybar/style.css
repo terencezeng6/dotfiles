@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-    background-color: @base;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #ffffff;
 }
 
@@ -23,11 +23,11 @@ window#waybar {
     background: transparent;
     margin: 2px 2px 3px 0;
     border-radius: 2px;
-    color: @text;
+    color: #ffffff;
 }
 
 #workspaces button.active {
-    background: @red;
+    background: @blue;
     color: @base;
 }
 
@@ -45,7 +45,7 @@ window#waybar {
 #volume {
     border-radius: 2px;
     padding: 0 8px;
-    background: @surface0;
+    background: @base;
     margin: 2px 0px 3px 2px;
 }
 
