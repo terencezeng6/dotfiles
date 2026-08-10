@@ -4,8 +4,8 @@
     font:                       "Iosevka Nerd Font 12";
     background:                 rgba(0, 0, 0, 0.7);
     background-color:           transparent;
-    foreground:                 @text;
-    lightfg:                    @text;
+    foreground:                 #ffffff;
+    lightfg:                    #ffffff;
     lightbg:                    transparent;
     selected-normal-background: @blue;
 }
