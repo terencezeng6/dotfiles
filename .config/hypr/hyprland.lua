@@ -181,6 +181,11 @@ hl.config({
     },
 })
 
+-- add blur to rofi
+hl.layer_rule({
+    match = { namespace = "rofi" },
+    blur = true,
+})
 
 ---------------
 ---- INPUT ----
