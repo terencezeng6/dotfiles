@@ -21,10 +21,10 @@ hl.monitor({
 
 -- Disable laptop display when lid is closed
 hl.bind("switch:on:Lid Switch", function()
-	hl.monitor({ output = "eDP-1", disabled = true })
+    hl.dispatch(hl.dsp.dpms({ action = "off", monitor = "eDP-1" }))
 end, { locked = true })
 hl.bind("switch:off:Lid Switch", function()
-	hl.monitor({ output = "eDP-1", disabled = false })
+    hl.dispatch(hl.dsp.dpms({ action = "on", monitor = "eDP-1" }))
 end, { locked = true })
 
 ---------------------
