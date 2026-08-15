@@ -22,3 +22,7 @@ element selected.normal {
     text-color:                 @background;
 }
 
+entry {
+    placeholder: "";
+}
+
