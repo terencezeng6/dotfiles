@@ -12,3 +12,5 @@ Now, you can use standard git commands under the `dotfiles` alias: `add`, `commi
 ### Screenshots
 
 ![Screenshot 1](./Pictures/2026-08-12-desktop-clean.png)
+
+![Screenshot 2](./Pictures/2026-08-12-desktop-demo.png)
