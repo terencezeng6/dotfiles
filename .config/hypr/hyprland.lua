@@ -17,15 +17,8 @@ hl.monitor({
     mode     = "preferred",
     position = "auto",
     scale    = 1.33,
+    mirror = "DP-2",
 })
-
--- Disable laptop display when lid is closed
-hl.bind("switch:on:Lid Switch", function()
-	hl.monitor({ output = "eDP-1", disabled = true })
-end, { locked = true })
-hl.bind("switch:off:Lid Switch", function()
-	hl.monitor({ output = "eDP-1", disabled = false })
-end, { locked = true })
 
 ---------------------
 ---- MY PROGRAMS ----
