@@ -1,5 +1,6 @@
 {
     "layer": "top",
+    "height": 32,
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["bluetooth", "network", "group/volume", "cpu", "memory", "battery", "clock"],
