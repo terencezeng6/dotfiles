@@ -1,10 +1,10 @@
 {
     "layer": "top",
     "height": 32,
-    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-center": ["hyprland/window"],
+    "modules-left": ["niri/workspaces"],
+    "modules-center": ["niri/window"],
     "modules-right": ["bluetooth", "network", "group/volume", "cpu", "memory", "battery", "clock"],
-    "hyprland/workspaces": {
+    "niri/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
