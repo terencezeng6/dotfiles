@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias vi='vim'
+alias sudo='sudo '
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \w]\$ '
