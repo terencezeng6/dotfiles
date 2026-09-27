@@ -73,6 +73,11 @@ input {
     warp-mouse-to-focus
 }
 
+cursor {
+    // xcursor-theme "XCursor_Sans"
+    // xcursor-size 36
+}
+
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
 // The built-in laptop monitor is usually called "eDP-1".
