@@ -49,6 +49,13 @@ window#waybar {
     margin: 2px 0px 3px 2px;
 }
 
+#bluetooth:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover {
+    color: @blue;
+}
+
 #pulseaudio-slider {
     padding: 0px;
     margin: 0px 0px 0px 8px;
