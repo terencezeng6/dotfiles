@@ -569,8 +569,8 @@ binds {
     // Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
-    Mod+Escape { quit; }
-    Ctrl+Alt+Delete { quit; }
+    Mod+Escape { spawn "hyprlock"; }
+    Mod+Shift+Escape { quit; }
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
