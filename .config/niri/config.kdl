@@ -498,8 +498,6 @@ binds {
 
     // Cycle through widths set in preset-column-widths.
     Mod+R { switch-preset-column-width; }
-    // Cycling through the presets in reverse order is also possible.
-    Mod+Shift+R { switch-preset-column-width-back; }
 
     Mod+Ctrl+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
@@ -571,6 +569,13 @@ binds {
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Mod+Escape { spawn "hyprlock"; }
     Mod+Shift+Escape { quit; }
+
+    Mod+Shift+S allow-when-locked=true { 
+        spawn-sh "pgrep -x hyprlock >/dev/null && systemctl suspend" 
+    }
+    Mod+Shift+R allow-when-locked=true { 
+        spawn-sh "pgrep -x hyprlock >/dev/null && systemctl reboot" 
+    }
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
